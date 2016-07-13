@@ -36,12 +36,12 @@
           <input type='checkbox' id='contact-link' />
           <label id='contact-label' for='contact-link'>pin kontaktieren  /  contact pin</label>
           <div id="form-messages"></div>
-          <form id='contact-form' action="https://formspree.io/emdo2000@gmail.com" method="post" accept='application/json' enctype="text/plain">
+          <form id='contact-form' action="https://formspree.io/emdo2000@gmail.com" method="post" enctype="text/plain">
             <input id='msgname' class='form-input' type="text" name="name" placeholder="Name" required><br>
             <input id='msgemail' class='form-input' type="text" name="mail" placeholder="Email" required><br>
             <textarea id='msgcontent' name="comment" placeholder="Message" required></textarea><br><br>
-            <input class='form-button' type="submit" value="Send">
-            <input class='form-button' type="reset" value="Reset">
+            <input class='form-button' name='submit' type="submit" value="Send">
+            <input class='form-button' name='reset' type="reset" value="Reset">
           </form>
         </div>
       </main>
