@@ -13,11 +13,13 @@ $(function() {
     		data: $(this).serialize(),
     		dataType: 'json',
     		beforeSend: function() {
-    			formMessages.text('Sending...');
-
+    			formMessages.text('Ihre Nachricht wird gesendet / Sending your message');
+          formMessages.removeClass('success')
+          formMessages.fadeIn();
     		},
     		success: function(data) {
-          formMessages.text('Message sent!');
+          formMessages.text('Danke für Ihre Nachricht! / Thank you for your Message!');
+          formMessages.addClass('success').delay(1000).fadeOut();
     		},
     		error: function(err) {
     			formMessages.text('Error.' + err);

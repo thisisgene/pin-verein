@@ -129,8 +129,23 @@ main {
 #contact-form .form-button {
   background: #fff;
   cursor: pointer;
-
 }
+
+#form-messages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: .5rem 1rem;
+  border: .15rem solid #555;
+  border-radius: .2rem;
+  box-shadow: 0 0 .6rem #aaa;
+}
+.success {
+  background: #c1ffb4;
+}
+
 footer {
   margin-top: 4rem;
   text-align: center;
