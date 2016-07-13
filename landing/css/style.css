@@ -131,21 +131,7 @@ main {
   cursor: pointer;
 }
 
-#form-messages {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  padding: .5rem 1rem;
-  border: .15rem solid #555;
-  border-radius: .2rem;
-  box-shadow: 0 0 .6rem #aaa;
-}
-.success {
-  background: #c1ffb4 !important;
-}
+
 
 footer {
   margin-top: 4rem;
@@ -154,6 +140,24 @@ footer {
   color: #bbb;
   font-style: italic;
 }
+@media screen and (min-width: 1025px) {
+  #form-messages {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: .5rem 1rem;
+    border: .15rem solid #555;
+    border-radius: .2rem;
+    box-shadow: 0 0 .6rem #aaa;
+  }
+  .success {
+    background: #c1ffb4 !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   main {
     width: 80%;
@@ -180,6 +184,13 @@ footer {
   }
   #contact-label {
     margin-left: 0rem;
+  }
+  #form-messages {
+    position: relative;
+    display: none;
+  }
+  .success {
+    color: #c1ffb4 !important;
   }
 }
 @media screen and (max-width: 440px) {

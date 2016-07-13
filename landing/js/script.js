@@ -23,7 +23,7 @@ $(function() {
           $('#form-reset').click();
     		},
     		error: function(err) {
-    			formMessages.text('Error.' + err);
+    			formMessages.text('Nachricht konnte nicht gesendet werden. / Message could not be sent.');
     		}
     	});
     });
