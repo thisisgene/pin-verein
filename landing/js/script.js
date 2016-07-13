@@ -20,7 +20,7 @@ $(function() {
     		success: function(data) {
           formMessages.text('Danke für Ihre Nachricht! / Thank you for your Message!');
           formMessages.addClass('success').delay(3000).fadeOut(1000);
-          $('#contact-form')[0].reset();
+          $('#form-reset').click();
     		},
     		error: function(err) {
     			formMessages.text('Error.' + err);
