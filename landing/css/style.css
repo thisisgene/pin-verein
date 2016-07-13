@@ -190,7 +190,7 @@ footer {
     display: none;
   }
   .success {
-    color: #c1ffb4 !important;
+    color: #00a035 !important;
   }
 }
 @media screen and (max-width: 440px) {
