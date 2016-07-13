@@ -144,7 +144,7 @@ main {
   box-shadow: 0 0 .6rem #aaa;
 }
 .success {
-  background: #c1ffb4;
+  background: #c1ffb4 !important;
 }
 
 footer {

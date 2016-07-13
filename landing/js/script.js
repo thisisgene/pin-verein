@@ -14,12 +14,12 @@ $(function() {
     		dataType: 'json',
     		beforeSend: function() {
     			formMessages.text('Ihre Nachricht wird gesendet / Sending your message');
-          formMessages.removeClass('success')
-          formMessages.fadeIn();
+          formMessages.removeClass('success');
+          formMessages.fadeIn(1000);
     		},
     		success: function(data) {
           formMessages.text('Danke für Ihre Nachricht! / Thank you for your Message!');
-          formMessages.addClass('success').delay(1000).fadeOut();
+          formMessages.addClass('success').delay(3000).fadeOut(1000);
     		},
     		error: function(err) {
     			formMessages.text('Error.' + err);
