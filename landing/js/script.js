@@ -8,7 +8,7 @@ $(function() {
     $(form).submit(function(e) {
     	e.preventDefault();
     	$.ajax({
-    		url: '//formspree.io/contact@pin.or.at',
+    		url: 'https://formspree.io/emdo2000@gmail.com',
     		method: 'POST',
     		data: $(this).serialize(),
     		dataType: 'json',
