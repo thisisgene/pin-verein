@@ -1,4 +1,4 @@
-<div id='left-container'>
+<div id='menu-container'>
 
   <div id='side-menu'>
     <nav class="site-nav">
@@ -10,12 +10,14 @@
         </svg>
       </a>
       <div class="trigger">
-        {% assign pages=site.pages | where:"lang", page.lang %}
-        {% for my_page in pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <div id='menu-item-container'>
+          {% assign pages=site.pages | where:"lang", page.lang | sort:"weight" %}
+          {% for my_page in pages %}
+            {% if my_page.title %}
+              <a class="page-link pjax" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
 
 

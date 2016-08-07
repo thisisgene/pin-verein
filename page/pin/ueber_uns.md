@@ -4,6 +4,7 @@ title: Über uns
 permalink: /de/ueber_uns/
 ref: about
 lang: de
+weight: 1
 ---
 
 pin – Verein für Partizipation, Integration & Nachhaltigkeit

@@ -27,7 +27,7 @@
 .site-nav {
     float: right;
     line-height: 56px;
-    margin-right: 100px;
+    // margin-right: 100px;
     .menu-icon {
         display: none;
     }
@@ -38,7 +38,7 @@
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
-            margin-right: 20px;
+            // margin-right: 20px;
         }
     }
 
@@ -50,6 +50,8 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+
+        
 
         .menu-icon {
             display: block;
@@ -82,10 +84,10 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            // padding: 5px 10px;
 
             &:not(:last-child) {
-                margin-right: 0;
+                // margin-right: 0;
             }
             margin-left: 20px;
         }
