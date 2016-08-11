@@ -11,10 +11,16 @@
       </a>
       <div class="trigger">
         <div id='menu-item-container'>
+          <!-- {% assign lang_pages=site.pages | where:"ref", page.ref | sort: 'lang' %} -->
+
+
+
+
           {% assign pages=site.pages | where:"lang", page.lang | sort:"weight" %}
           {% for my_page in pages %}
             {% if my_page.title %}
-              <a class="page-link pjax" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              {% assign same_pages=site.pages | where:"ref", my_page.ref %}
+              <a {% if page.title == my_page.title %} class="page-link pjax active" {% else %} class="page-link pjax" {% endif %} href="{{ my_page.url | prepend: site.baseurl }}" {% for page in same_pages %} data-{{page.lang}}='{{page.permalink}}' {% endfor %}>{{ my_page.title }}</a>
             {% endif %}
           {% endfor %}
         </div>

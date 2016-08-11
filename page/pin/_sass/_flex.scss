@@ -11,13 +11,9 @@
   //  flex: 1 0 0;
 }
 
-#main-wrapper div:nth-child(2) {
-  flex-grow: 1;
-}
 
 #menu-container {
-  width: 10em;
-  margin: 2em 0;
+
   @extend %flex;
   -webkit-flex-direction: row;
    flex-direction: row;
@@ -30,8 +26,10 @@
   @extend %flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+
 }
 
+
 #right-container {
-  width: 10em;
+  // width: 217.6px;
 }
